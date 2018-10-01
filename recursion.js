@@ -51,14 +51,13 @@
 
 // const triangle = num => {
 //   if (num === 0) {
-//     return;
+//     return 0;
 //   }
 
-//   let star = "*";
-//   return "*" + triangle(num - 1);
+//   return num + triangle(num - 1);
 // };
 
-// console.log(triangle(5));
+// console.log(triangle(10));
 
 // String Splitter
 
@@ -103,15 +102,3 @@
 // }
 
 // console.log(binaryRep(25));
-
-function factorialize(num) {
-  if (num < 0) {
-    return undefined;
-  }
-  if (num === 0) {
-    return 1;
-  }
-  return num * factorialize(num - 1);
-}
-
-console.log(factorialize(5));
